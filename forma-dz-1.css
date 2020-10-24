@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@400;700;900&display=swap');
+
+/* font-family: 'Pacifico', cursive; */
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: grey;
+}
+
+img {
+    width: 100%;
+}
+
+.back {
+    background: url(img/img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 866px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid black; */
+
+    width: 1500px;
+    height: 866px;
+}
+
+.back .page-title {
+    text-align: center;
+    display: block;
+    padding-top: 80px;
+    color: black;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 80px;
+}
+
+.back>span:nth-of-type(2) {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+    width: 330px;
+    /* border: 1px solid black; */
+}
+
+.form-block {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-block>div {
+    width: 500px;
+    /* border: 1px solid black; */
+}
+
+.form-block div:first-child {
+    margin-left: 160px;
+}
+
+.form-block div:last-child {
+    margin-right: 160px;
+}
+
+
+.item-name {
+    color: black;
+}
+
+.back .info {
+    color: black;
+    font-size: 20px;
+}
+
+
+.back .info span {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+form input {
+    width: 490px;
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: #77dbdb;
+    opacity: 0.77;
+    outline: none;
+    border: 0px;
+    text-indent: 20px;
+    color: white;
+    font-size: 15px;
+}
+
+
+
+.form__error {
+    color: red;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    top: -18px;
+    visibility: hidden;
+}
+
+.form__input:invalid+.form__error {
+    visibility: visible;
+}
+
+form input::placeholder {
+    color: white;
+    /* font-weight: 700; */
+}
+
+form input:focus {
+    background-color: #00c4c4;
+    opacity: 1;
+}
+
+form textarea {
+    width: 490px;
+    resize: none;
+    /* height: 250px; */
+    padding-top: 20px;
+    padding-bottom: 230px;
+    background-color: #77dbdb;
+    opacity: 0.77;
+    outline: none;
+    border: 0px;
+    text-indent: 20px;
+    color: white;
+}
+
+form textarea:focus {
+    background-color: #00c4c4;
+    opacity: 1;
+}
+
+form textarea::placeholder {
+    color: white;
+}
+
+
+
+.footer {
+    background-color: #262626;
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer>div {
+    color: #747474;
+    width: 32%;
+    /* border: 1px solid white; */
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 17px;
+}
+
+#cahee {
+    font-size: 22px;
+    font-family: 'Pacifico', cursive;
+    color: #afafaf;
+}
+
+.footer div:last-of-type span {
+    color: red;
+    font-weight: 700;
+}

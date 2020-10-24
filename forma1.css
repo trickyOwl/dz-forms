@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.form-back {
+    width: 800px;
+    height: 600px;
+    background-color: #bac5db;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top {
+    height: 380px;
+    width: 670px;
+    background-color: #353a45;
+    border-radius: 24px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.envelope {
+    height: 96px;
+    width: 96px;
+    /* border: 1px solid black; */
+    position: relative;
+    top: -48px;
+    border-radius: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: -webkit-linear-gradient(45deg, rgb(115, 177, 199) 18%, rgb(125, 68, 193) 69%);
+    background: -moz-linear-gradient(45deg, rgb(115, 177, 199) 18%, rgb(125, 68, 193) 69%);
+    background: linear-gradient(45deg, rgb(115, 177, 199) 18%, rgb(125, 68, 193) 69%);
+}
+
+i {
+    color: white;
+    font-size: 40px;
+}
+
+.inner {
+    border: 3px solid white;
+    height: 76px;
+    width: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 38px;
+}
+
+.cross i {
+    color: #4d5975;
+}
+
+.cross button {
+    background-color: #353a45;
+    outline: none;
+    border: 0;
+}
+
+.cross button:hover i {
+    color: white;
+    cursor: pointer;
+}
+
+.cross {
+    position: absolute;
+    left: 605px;
+    top: 15px;
+}
+
+#form {
+    position: absolute;
+    text-align: center;
+}
+
+#form p:first-of-type {
+    margin-top: 80px;
+    color: #538fff;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+#form p:nth-of-type(2) {
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+#form input[type="email"] {
+    text-indent: 17px;
+    height: 54px;
+    width: 390px;
+    outline: none;
+    border: 1px solid #353a45;
+    /* border: 0px; */
+    border-radius: 16px;
+    font-size: 19px;
+    color: black;
+}
+
+#form input[type="email"]::placeholder {
+    color: #C0C0C0;
+}
+
+#form input[type="email"]:focus {
+    -webkit-box-shadow: 10px 10px 45px 6px rgba(83, 143, 255, 1);
+    -moz-box-shadow: 10px 10px 45px 6px rgba(83, 143, 255, 1);
+    box-shadow: 10px 10px 45px 6px rgba(83, 143, 255, 1);
+}
+
+#form input[type="email"]:invalid {
+    -webkit-box-shadow: 10px 10px 45px 6px rgba(219, 56, 15, 1);
+    -moz-box-shadow: 10px 10px 45px 6px rgba(219, 56, 15, 1);
+    box-shadow: 10px 10px 45px 6px rgba(219, 56, 15, 1);
+}
+
+
+
+#form input[type="button"] {
+    /* text-indent: 17px; */
+    height: 54px;
+    width: 160px;
+    outline: none;
+    border: 0px;
+    border-radius: 16px;
+    font-size: 19px;
+    color: white;
+    letter-spacing: 1px;
+    /* font-weight: 700; */
+    background-color: #538fff;
+    margin-left: 13px;
+}
+
+#form input[type="button"]:hover {
+    color: black;
+    cursor: pointer;
+}
+
+#form p:last-of-type {
+    font-style: italic;
+    margin-top: 40px;
+    color: #565b66;
+    font-size: 24px;
+}

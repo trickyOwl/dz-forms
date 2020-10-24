@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="forma-dz-1.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forma dz 1</title>
+</head>
+<body>
+    <main>
+        <div class="back">
+            <span class="page-title">contact</span> <br>
+            <span>For new projects, ideas, business or anything you'd like
+                to discuss, contact with me!
+            </span>
+            <div class="form-block">
+                <div>
+                    <form autocomplete="off" action="#" method="get">
+                        <!-- <div class="form__error">your name too short</div> -->
+                        <input type="text" class="form__input" required minlength="3" name="yourname" placeholder="Your Name...">
+                        <div class="form__error">your name is too short</div>
+                        <input type="email" class="form__input" required name="youremail"  placeholder="Your Email...">
+                        <div class="form__error">you have out invalid email, please be attentive</div>
+                        <input class="form__input" required  data-mask="(00) 0000-0000" minlength="3" type="phone" name="phone" placeholder="Your Phone..."/>
+                        <div class="form__error">your phone is too short</div>
+                        <textarea name="yourmessage" placeholder="Your message..."></textarea>
+                    </form>
+                </div>
+                <div class="info">
+                    <span>address</span> <br>
+                    123 City name, Street, City, Coutry <br> <br>
+                    <span>email</span> <br>
+                    cahee@domain.com  <br> <br>
+                    <span>phone</span>  <br>
+                    +012 345 6789 <br> <br>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div>&#169;2015 Company. All rights reserved.</div>
+            <div id="cahee">Cahee</div>
+            <div>Made with <span>love</span> by Auskteez</div>
+        </div>
+    </footer> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./plugins/jquery.mask.min.js"></script>
+</body>
+</html>

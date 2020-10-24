@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="forma-dz-2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forma dz 2</title>
+</head>
+<body>
+    <div class="back">
+        <div class="grad"></div>
+        <div class="form-block">
+            <div class="head">
+                <div>
+                    <span>Harold Finch</span> <br>
+                    <span>your total</span>
+                </div>
+                <div>$88</div>
+            </div>
+
+            <div class="form-itself">
+                <form method="get" action="#">
+                    <label for="cc">Credit card number</label>
+                    <input type="text" minlength="6" data-mask="0000 0000 0000 0000" class="form__input" id="cc" required name="creditcard">
+                    <div class="form__error">enter CC number</div> 
+                    <label for="month">Expiration date</label> <br>
+                    <select name="months">
+                        <option value="default" selected>Month</option>
+                        <option value="april">April</option>
+                        <option value="june">June</option>
+                    </select>
+                    <select name="year">
+                        <option value="default" selected>Year</option>
+                        <option value="april">1989</option>
+                        <option value="june">1987</option>
+                    </select>
+                    <div class="cvv-block">
+                        <label for="cvv">CVV</label>
+                        <div>
+                            <input type="password" data-mask="0000" name="cvv" id="cvv" maxlength="4" minlength="3">
+                            <span>3 or 4 digits - <a target="_blanc" href="https://youtu.be/wcsTJ1n2jkE?t=159">view examples</a></span>
+                        </div>
+                    </div>
+                    <hr>
+                    <button>Pay</button>
+                    <div class="bottom">
+                       <a target="_blanc" href="https://youtu.be/zdgkzYOYUp0?t=23">Cancel order</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./plugins/jquery.mask.min.js"></script>
+</body>
+</html>
